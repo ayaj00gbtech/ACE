@@ -1,0 +1,23 @@
+/* Document baseline the source page shipped with (safe-area padding, reset, hidden handling). */
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}
+img{max-width:100%}
+[hidden]:not([hidden=until-found i]){display:none!important}
+
+/* Design tokens */
+:root{
+  --bg:#0A0A0A; --fg:#FFFFFF; --soft:#CFCFCF; --muted:#9A9A9A; --dim:#5E5E5E; --line:#262626; --panel:#121212; --edge:#3A3A3A;
+  --red:#B5121B; --red-hi:#E23A44;
+  --display:'Archivo Black','Arial Black',Impact,sans-serif;
+  --sans:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --gut:clamp(16px,4.4vw,64px);
+  color-scheme:dark;
+}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-synthesis:none}
+*{box-sizing:border-box}
+.mono{font-family:var(--mono)}
+a{color:var(--fg)}
+:focus-visible{outline:2px solid var(--red-hi);outline-offset:3px}
